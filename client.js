@@ -17,6 +17,8 @@ const connect = function () {
   // ✅ Listen for incoming data from the server
   conn.on("data", (message) => {
     console.log("!!!", message);
+
+    conn.write("Name: GOD");
   });
 
 
