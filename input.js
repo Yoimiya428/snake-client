@@ -30,6 +30,11 @@ const handleUserInput = function (key) {
     connection.write("Move: right");
   }
 
+  //case: others
+  if (key === 'i') {
+    connection.write("Ovo")
+  }
+
 
 };
 
