@@ -1,5 +1,7 @@
-const setupInput = function () {
+let connection;
 
+const setupInput = function (connect) {
+  connection = connect;
   const stdin = process.stdin;
   stdin.setRawMode(true); 
   stdin.setEncoding("utf8"); 
